@@ -1,0 +1,24 @@
+{
+  "name": "web-app-basic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skifozzze/web-app-basic.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/skifozzze/web-app-basic/issues"
+  },
+  "homepage": "https://github.com/skifozzze/web-app-basic#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-handlebars": "^7.0.4"
+  }
+}
