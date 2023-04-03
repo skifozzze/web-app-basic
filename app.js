@@ -2,6 +2,8 @@ import express from 'express';
 import { engine, create } from 'express-handlebars';
 import products from './products.json' assert { type: 'json' };
 
+const PORT = process.env.PORT || 4444;
+
 const app = express();
 
 app.use(express.static('public'));
@@ -31,6 +33,6 @@ app.get('/product/:productId', (req, res) => {
   res.render('product', { product, pageTitle: 'Product' });
 });
 
-app.listen(4444, () => {
-  console.log(`application server is running on port ${4444}`);
+app.listen(PORT, () => {
+  console.log(`application server is running on port ${PORT}`);
 });
